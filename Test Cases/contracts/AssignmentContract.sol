@@ -11,7 +11,8 @@ contract AssignmentContract is Ownable {
     mapping(address => string) private userString;
 
     constructor() Ownable(msg.sender)  {}
-
+    
+    /// @dev To validate the length of string would be greater than 0
     modifier validString(string memory _str) {
         require(bytes(_str).length > 0, "String must not be empty");
         _;
@@ -20,6 +21,7 @@ contract AssignmentContract is Ownable {
     /// @notice This function allow user to store a sting message
     /// @param _newString A string that would be stored on Blockchain
     function setString(string calldata _newString) validString(_newString) external returns(bool){
+        require(msg.sender != address(0),"Invalid caller");
         userString[msg.sender] = _newString;
         emit SETSTRING(msg.sender, _newString);
         return true;
