@@ -14,17 +14,17 @@ describe("2. String", function () {
   });
 
   describe("2.1 Set string", function () {
-    it("User can set their message", async function () {
+    it("Should user can set their message", async function () {
         const text ="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book";
         await assignmentContract.connect(addr1).setString(text);
         expect(await assignmentContract.connect(addr1).getString()).to.equal(text);
     });
-    it("User can update their message", async function () {
+    it("Should user can update their message", async function () {
         const text ="Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy";
         await assignmentContract.connect(addr1).setString(text);
         expect(await assignmentContract.connect(addr1).getString()).to.equal(text);
     });
-    it("Every user can set their message", async function () {
+    it("Should every user can set their message", async function () {
         const text1 ="Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy";
         const text2 ="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.";
         const text3 ="It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
