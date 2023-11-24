@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+:root {
+  --main-bg-color: rgb(211, 249, 216);
+  --main-button-color: #aa4d26;
+  --main-button-bg-color: #eccf73;
+  --btn-dark-color: #c957277c;
+  --btn-light-color: #aa4d26;
+  --card-color: #aa4d26;
+  --yellow-color: #efcb75;
+  --yellow-color-two: #f7d075;
+  --font-color-1: #a75212;
+}
+*{
+  /* border: 1px solid white; */
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Lexend', sans-serif;
+  background-color: #010000 !important;
+  background: #010000 !important;
+  height: 100%;
+}
+html {
+  height: 100%;
+}
+#root {
+  height: 100%;
+}
+
+@media only screen and (min-width: 1025px) {
+  p {
+    font-size: 20px !important;
+  }
+  h6 {
+    font-size: 20px !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+li{
+  margin-bottom: 0.4rem;
+}
+}
+.mySpinner{
+  color: var(--yellow-color) !important;
+}

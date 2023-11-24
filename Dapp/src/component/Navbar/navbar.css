@@ -1,0 +1,25 @@
+.nav-menu {
+  background-color: var(--main-button-bg-color) !important;
+  padding: 12px 24px !important;
+  color: var(--main-font-color) !important;
+  font-weight: 500 !important;
+  font-size: 20px;
+  border-radius: 9px;
+
+}
+.navbar{
+  border-bottom:4px solid #2B2223 ;
+}
+.wallet-button {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+  padding: 12px 24px;
+  border-radius: 8px;
+  color: var(--main-font-color);
+  background-color: var(--main-button-bg-color) !important;
+
+  border: none;
+}
